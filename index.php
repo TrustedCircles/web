@@ -34,7 +34,7 @@ if (isset($mode)){
 
 }else{
     echo "<FRAMESET  border='0'>";
-    echo "<frame src='inicial.html'>";
+    echo "<frame src='index.html'>";
     echo "</frameset>";
 } 
 ?>
