@@ -144,7 +144,7 @@
 		  <div class="container-fluid">
 	    	      <div>
       		          <h1 class="text-uppercase marb10" data-i18n="tituloappconfi"></h1>  
-			  <p class="marb50" data-i18n="subtituloappconfi">Vuelve a casa acompañado por los tuyos.</p>
+			  <p class="marb50" data-i18n="subtituloappconfi"></p>
 		      </div>
 		  </div>
 	  </div>
@@ -209,12 +209,94 @@
       <div class="col-md-6 hidden-sm leftAl img-holder-2" data-background="images/TCmobile2.png"> </div>
       <!--/ Left Image--> 
     </section>
-    <!--About us--> 
     
-    
+
+    <section id="features">
+      <div class="features section-padding" style="background-color:#fff">
+        <div class="container">
+
+          <div class="header">
+            <h1 data-i18n="heramsolid"></h1>
+            <p data-i18n="heramsolidsub"></p>
+          </div> <!-- end .container> .header -->
+
+          <div class="row" style="margin-top:5%;">
+            <div class="col-md-4">
+              <div class="featured-item-img">
+                <img width="50%" src="images/phone1.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-8 feature-list">
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="featured-item">
+                    <div class="data">
+                      <h5 data-i18n="multiplat"></h5>
+                      <p data-i18n="multiplatsub"></p>
+                    </div> <!-- end .meta-text -->
+                  </div> <!-- end .featured-item -->
+                </div> <!-- end .feature-list> .row > .col-md-6 (1st item) -->
+
+                <div class="col-sm-6 col-md-6">
+                  <div class="featured-item">
+                    <div class="data">
+                      <h5 data-i18n="confi"></h5>
+                      <p data-i18n="confisub"></p>
+                    </div> <!-- end .meta-text -->
+                  </div> <!-- end .featured-item -->
+                </div> <!-- end .feature-list> .row > .col-md-6 (2nd item) -->
+
+                <div class="col-sm-6 col-md-6" style="margin-top:1%;">
+                  <div class="featured-item">
+                    <div class="data">
+                      <h5 data-i18n="solid"></h5>
+                      <p data-i18n="solidsub"> </p>
+                    </div> <!-- end .meta-text -->
+                  </div> <!-- end .featured-item -->
+                </div> <!-- end .feature-list> .row > .col-md-6 (3rd item) -->
+
+                <div class="col-sm-6 col-md-6" style="margin-top:1%;">
+                  <div class="featured-item">
+                    <div class="data">
+                      <h5 data-i18n="evas"></h5>
+                      <p data-i18n="evassub"></p>
+                    </div> <!-- end .meta-text -->
+                  </div> <!-- end .featured-item -->
+                </div> <!-- end .feature-list> .row > .col-md-6 (4th item) -->
+
+                <div class="col-sm-6 col-md-6" style="margin-top:1%;">
+                  <div class="featured-item">
+                    <div class="data">
+                      <h5 data-i18n="preci"></h5>
+                      <p data-i18n="precisub"></p>
+                    </div> <!-- end .meta-text -->
+                  </div> <!-- end .featured-item -->
+                </div> <!-- end .feature-list> .row > .col-md-6 (5th item) -->
+
+                <div class="col-sm-6 col-md-6" style="margin-top:1%;">
+                  <div class="featured-item">
+                    <div class="data">
+                      <h5 data-i18n="glob"></h5>
+                      <p data-i18n="globsub"></p>
+                    </div> <!-- end .meta-text -->
+                  </div> <!-- end .featured-item -->
+                </div> <!-- end .feature-list> .row > .col-md-6 (6th item) -->
+
+              </div> <!-- end .feature-list> .row -->
+            </div> <!-- end .feature-list -->
+          </div> <!-- end .container> .row -->
+
+        </div> <!-- end .container -->
+      </div> <!-- end .features -->
+    </section>
+    <!-- ====== End Features Section ====== -->
+
+
+
+
     <!-- Team
             –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <section id="team" class="clearfix ipad-view bgColor2">
+    <section id="team" class="clearfix ipad-view bgColor3">
       <div class="container">
         <div class="row row-padding">
           <div class="col-md-3"> 
@@ -709,14 +791,14 @@ function setLanguage() {
  
     /* Cambiamos de lenguaje o idioma al gusto del usuario */
     function changeLanguage(lang) {
-	            i18next.changeLanguage(lang, (err, t) => {
-                $("*[data-i18n]").localize();
-	        });
-	        }
+        i18next.changeLanguage(lang, function(err, t) {
+        $("*[data-i18n]").localize();
+	});
+    }
  
     $(function() {
-	            setLanguage();
-		        });
+        setLanguage();
+    });
 
 
 </script>
